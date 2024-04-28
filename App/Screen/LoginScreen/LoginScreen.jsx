@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     heading: {
         fontSize: 30,
         fontWeight: 'bold', // Bold font for heading
-        color: Colors.PRIMARY, // Heading color
+        color: '#fcc501', // Heading color
     },
     desc: {
         fontSize: 18,
@@ -77,16 +77,20 @@ const styles = StyleSheet.create({
         color: Colors.GRAY, // Description color
     },
     button: {
-        backgroundColor: Colors.PRIMARY, // Button background color
-        paddingVertical: 16,
-        paddingHorizontal: 30,
-        borderRadius: 30, // Pill-shaped button
-        marginTop: 30,
-        width: '80%', // Button width
+        backgroundColor: '#fcc501', // A red shade for the button background
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 25, // Rounded corners
+        elevation: 2, // Shadow for Android
+        shadowColor: '#000', // Shadow for iOS
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
     },
     buttonText: {
-        color: Colors.WHITE, // Button text color
+        color: 'black', // Button text color
         fontSize: 17,
-        fontWeight: '600', // Button text font weight
+        fontWeight: '600',
+         // Button text font weight
     },
 });

@@ -15,7 +15,7 @@ const PlaceAutocompleteExample = () => {
       setSuggestions([]);
       return;
     }
-
+  
     try {
       const response = await axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(searchQuery)}.json`, {
         params: {
@@ -24,7 +24,7 @@ const PlaceAutocompleteExample = () => {
           limit: 3,  // Limit the number of suggestions to 3
         }
       });
-
+  
       if (response.data.features) {
         setSuggestions(response.data.features);
         console.log("Place Autocomplete suggestions:", response.data.features);
@@ -47,8 +47,7 @@ const PlaceAutocompleteExample = () => {
   const renderItem = ({ item }) => (
     <TouchableOpacity style={styles.item} onPress={() => handleSelectSuggestion(item)}>
       <Text style={styles.itemText}>{item.place_name}</Text>
-      <Text style={styles.itemDetailText}>{item.properties?.category || 'No category'}</Text>
-      <Text style={styles.coordinatesText}>Coordinates: {item.center.join(', ')}</Text>
+      <Text style={styles.itemDetailText}>{item.properties.category}</Text>
     </TouchableOpacity>
   );
 
@@ -106,10 +105,6 @@ const styles = StyleSheet.create({
   itemDetailText: {
     fontSize: 14,
     color: '#666666',
-  },
-  coordinatesText: {
-    fontSize: 12,
-    color: '#888888',
   },
   selectedPlaceContainer: {
     padding: 12,

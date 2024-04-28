@@ -34,7 +34,7 @@ export default function TabNavigation() {
           <Tab.Screen name='favorite' 
         component={FavoriteScreen}
         options={{
-            tabBarLabel:'favorite',
+            tabBarLabel:'Recent',
             tabBarActiveTintColor:Colors.PRIMARY,
             tabBarIcon:({Color, size })=>(
                 <AntDesign name="heart" size={size} color={Color} />

@@ -4,23 +4,23 @@ import { useUser } from '@clerk/clerk-expo';
 import { FontAwesome } from '@expo/vector-icons';
 
 export default function Header() {
-    const { user } = useUser();
+    // const { user } = useUser();
 
-    return (
-        <View style={styles.container}>
-            <View style={styles.imageContainer}>
-                {user && user.imageUrl && (
-                    <Image
-                        source={{ uri: user.imageUrl }}
-                        style={styles.image}
-                    />
-                )}
-            </View>
-            <TouchableOpacity onPress={() => console.log("Filter button pressed")}>
-                <FontAwesome name="filter" size={24} color="black" />
-            </TouchableOpacity>
-        </View>
-    )
+    // return (
+    //     <View style={styles.container}>
+    //         <View style={styles.imageContainer}>
+    //             {user && user.imageUrl && (
+    //                 <Image
+    //                     source={{ uri: user.imageUrl }}
+    //                     style={styles.image}
+    //                 />
+    //             )}
+    //         </View>
+    //         <TouchableOpacity onPress={() => console.log("Filter button pressed")}>
+    //             <FontAwesome name="filter" size={24} color="black" />
+    //         </TouchableOpacity>
+    //     </View>
+    // )
 }
 
 const styles = StyleSheet.create({
