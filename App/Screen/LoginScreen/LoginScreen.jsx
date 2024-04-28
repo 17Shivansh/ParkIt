@@ -30,6 +30,10 @@ export default function LoginScreen() {
         <View style={styles.container}>
             {/* Header Section */}
             <View style={styles.header}>
+                <Image
+                    source={require('./../../../assets/Images/logo.png')}
+                    style={styles.logoImage}
+                />    
                 <Text style={styles.heading}>ParkIt!</Text>
                 <Text style={styles.desc}>Book Your Own Spot.</Text>
             </View>
@@ -56,6 +60,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: Colors.WHITE, // Background color
     },
+    logoImage: {
+        width: '20%',
+        height: 58,
+        resizeMode: 'contain',
+      },
     header: {
         alignItems: 'center',
         marginTop: 30, // Top margin for header
@@ -66,6 +75,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         resizeMode: 'contain', // Ensure the full image is visible
     },
+    
     heading: {
         fontSize: 30,
         fontWeight: 'bold', // Bold font for heading
