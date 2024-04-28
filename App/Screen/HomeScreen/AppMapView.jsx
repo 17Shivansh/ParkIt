@@ -25,8 +25,8 @@ export default function AppMapView() {
         region={{
           latitude: location.latitude,
           longitude: location.longitude,
-          latitudeDelta: 0.0422,
-          longitudeDelta: 0.0421
+          latitudeDelta: 0.022,
+          longitudeDelta: 0.021
         }}
       >
         <Marker
