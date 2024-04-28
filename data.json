@@ -1,0 +1,232 @@
+Place Autocomplete suggestions: [
+    {
+        "bbox": [
+            2.515593,
+            48.80725,
+            2.596324,
+            48.858057
+        ],
+        "center": [
+            2.551957,
+            48.849397
+        ],
+        "context": [
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "geometry": {
+            "coordinates": [Array
+            ],
+            "type": "Point"
+        },
+        "id": "place.178595917",
+        "place_name": "Noisy-le-Grand, Seine-Saint-Denis, France",
+        "place_type": [
+            "place"
+        ],
+        "properties": {
+            "mapbox_id": "dXJuOm1ieHBsYzpDcVVvVFE",
+            "wikidata": "Q207605"
+        },
+        "relevance": 1,
+        "text": "Noisy-le-Grand",
+        "type": "Feature"
+    },
+    {
+        "bbox": [
+            77.297066,
+            28.500086,
+            77.4254379,
+            28.66499
+        ],
+        "center": [
+            77.327107,
+            28.570784
+        ],
+        "context": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "geometry": {
+            "coordinates": [Array
+            ],
+            "type": "Point"
+        },
+        "id": "place.32082027",
+        "place_name": "Noida, Uttar Pradesh, India",
+        "place_type": [
+            "place"
+        ],
+        "properties": {
+            "mapbox_id": "dXJuOm1ieHBsYzpBZW1JYXc",
+            "wikidata": "Q278204"
+        },
+        "relevance": 1,
+        "text": "Noida",
+        "type": "Feature"
+    },
+    {
+        "center": [
+            105.803967,
+            21.2191845
+        ],
+        "context": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "geometry": {
+            "coordinates": [Array
+            ],
+            "type": "Point"
+        },
+        "id": "poi.790274063051",
+        "place_name": "Noi Bai International Airport, Sóc Sơn, Hanoi, 12200, Vietnam",
+        "place_type": [
+            "poi"
+        ],
+        "properties": {
+            "address": "Sóc Sơn",
+            "category": "airport",
+            "foursquare": "4ba4eb75f964a5201cc338e3",
+            "landmark": true,
+            "maki": "airport",
+            "wikidata": "Q844098"
+        },
+        "relevance": 1,
+        "text": "Noi Bai International Airport",
+        "type": "Feature"
+    }
+]
+ LOG  Place Autocomplete suggestions: [
+    {
+        "bbox": [
+            77.297066,
+            28.500086,
+            77.4254379,
+            28.66499
+        ],
+        "center": [
+            77.327107,
+            28.570784
+        ],
+        "context": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "geometry": {
+            "coordinates": [Array
+            ],
+            "type": "Point"
+        },
+        "id": "place.32082027",
+        "place_name": "Noida, Uttar Pradesh, India",
+        "place_type": [
+            "place"
+        ],
+        "properties": {
+            "mapbox_id": "dXJuOm1ieHBsYzpBZW1JYXc",
+            "wikidata": "Q278204"
+        },
+        "relevance": 1,
+        "text": "Noida",
+        "type": "Feature"
+    },
+    {
+        "center": [
+            77.339579,
+            28.588598
+        ],
+        "context": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "geometry": {
+            "coordinates": [Array
+            ],
+            "type": "Point"
+        },
+        "id": "poi.283467910928",
+        "place_name": "Noida Stadium, Sector-25 A, Noida, Uttar Pradesh 201301, India",
+        "place_type": [
+            "poi"
+        ],
+        "properties": {
+            "address": "Sector-25 A",
+            "category": "stadium, athletic field, sports field, leisure",
+            "foursquare": "4e63089c1838ad3d0f11dc6b",
+            "landmark": true
+        },
+        "relevance": 1,
+        "text": "Noida Stadium",
+        "type": "Feature"
+    },
+    {
+        "center": [
+            77.350164,
+            28.562483
+        ],
+        "context": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "geometry": {
+            "coordinates": [Array
+            ],
+            "type": "Point"
+        },
+        "id": "poi.816043860050",
+        "place_name": "Noida Golf Course, Sector 38, Noida, Uttar Pradesh 201303, India",
+        "place_type": [
+            "poi"
+        ],
+        "properties": {
+            "address": "Sector 38",
+            "category": "country club, golf course, sports",
+            "foursquare": "4c867ba5d4e237044ba88b88",
+            "landmark": true
+        },
+        "relevance": 1,
+        "text": "Noida Golf Course",
+        "type": "Feature"
+    }
+]
