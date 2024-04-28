@@ -1,6 +1,6 @@
 module.exports = function(api) {
   api.cache(true);
-  
+
   const isExpo = process.env.EXPO_CLI === 'true'; // or any other way to detect if running under Expo
 
   return {

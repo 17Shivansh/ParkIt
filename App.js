@@ -5,7 +5,7 @@ import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-expo";
 import * as SecureStore from "expo-secure-store";
 import { NavigationContainer } from '@react-navigation/native';
 import TabNavigation from './App/Navigations/TabNavigation';
-
+import {CLERK_KEY} from '@env';
 import * as Location from 'expo-location';
 import { useEffect, useState } from 'react';
 import { UserLocationContext } from './App/Context/UserLocationContext';
