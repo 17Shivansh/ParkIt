@@ -1,11 +1,23 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+// PlaceListView.jsx
+import React from 'react';
+import { View, FlatList } from 'react-native';
+import PlaceItem from './PlaceItem';
+import placesDatabase from './placesDatabase';
 
-export default function PlaceListView({placeList}) {
-    console.log('***',placeList)
+export default function PlaceListView() {
   return (
     <View>
-      <Text>PlaceListView</Text>
+      <FlatList
+        data={placesDatabase}
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        renderItem={({ item }) => (
+          <View>
+            <PlaceItem place={item} />
+          </View>
+        )}
+        keyExtractor={(item) => item.id.toString()} // Add keyExtractor
+      />
     </View>
-  )
+  );
 }

@@ -1,0 +1,24 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "name": "Park",
+      "imageSource": "./assets/Images/park.jpg",
+      "details": {
+        "location": "City Park",
+        "description": "A beautiful park in the city center",
+        "rating": 4.5
+      }
+    },
+    {
+      "id": 2,
+      "name": "Beach",
+      "imageSource": "./assets/Images/beach.jpg",
+      "details": {
+        "location": "Sunny Beach",
+        "description": "A sandy beach with crystal-clear water",
+        "rating": 4.8
+      }
+    }
+  ]
+}
