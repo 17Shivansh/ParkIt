@@ -83,18 +83,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 50,
+    paddingHorizontal: 12,
   },
   searchBar: {
     height: 40,
-    marginHorizontal: 12,
     borderWidth: 1,
     paddingHorizontal: 10,
+    marginBottom: 10,
   },
   list: {
     maxHeight: 200,
+    marginBottom: 10,
   },
   item: {
-    paddingHorizontal: 12,
     paddingVertical: 8,
     borderBottomWidth: 1,
     borderBottomColor: '#cccccc',
@@ -108,11 +109,14 @@ const styles = StyleSheet.create({
     color: '#666666',
   },
   selectedPlaceContainer: {
-    padding: 12,
+    paddingVertical: 12,
+    backgroundColor: '#f0f0f0',
+    borderRadius: 8,
   },
   selectedPlaceText: {
     fontSize: 18,
     fontWeight: 'bold',
+    marginBottom: 6,
   },
   selectedPlaceDetail: {
     fontSize: 16,
