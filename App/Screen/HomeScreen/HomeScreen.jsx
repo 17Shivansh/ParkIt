@@ -8,7 +8,7 @@ import GlobalApi from '../../Utils/GlobalApi';
 import ParkingCard from './parkingCard'; // Import the ParkingCard component
 
 // Corrected JSON object
-const parkingData = [
+const kiet = [
   {
     "id": "1",
     "name": "Car Parking",
@@ -31,6 +31,54 @@ const parkingData = [
     "photo_url": `bewxAd8djsZaTqMdjsdgP/2Q==`,
   }
 ];
+const banglore = [
+  {
+    "id": "1",
+    "name": "St. Patrick's (Pay and Park near MG road)",
+    "embedding_link": `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36988.07926036914!2d77.58423353742837!3d12.978700950221391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae178561f8cab5%3A0xda6b46c2fed58a55!2sSt.%20Patrick&#39;s%20(Pay%20and%20Park%20near%20MG%20road)!5e0!3m2!1sen!2sin!4v1714364966254!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
+    "rating": 3,
+    
+  },
+  {
+    "id": "2",
+    "name": "Cubbon Park 4 Wheeler Parking",
+    "embedding_link": `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62207.235140538716!2d77.5508051239819!3d12.974909382185633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17a1c61490f9%3A0x921cbf60f655dc9f!2sCubbon%20Park%204%20Wheeler%20Parking!5e0!3m2!1sen!2sin!4v1714365007637!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
+    "rating": 4.1,
+    
+  },
+  {
+    "id": "3",
+    "name": "Shanti Nagar parking",
+    "embedding_link": `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62207.235140538716!2d77.5508051239819!3d12.974909382185633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15b0dfcca259%3A0x4a4770d3875bf98a!2sShanti%20Nagar%20parking!5e0!3m2!1sen!2sin!4v1714365045485!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
+    "rating": 3.5,
+    
+  }
+];
+const gurugram = [
+  {
+    "id": "1",
+    "name": "Guru Dronacharya Metro Parking Area",
+    "embedding_link": `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d737.2440546237294!2d77.10017919412327!3d28.48124810432617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d192cbe955555%3A0x172ace3e35ad28f4!2sGuru%20Dronacharya%20Metro%20Parking%20Area!5e0!3m2!1sen!2sin!4v1714364683847!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
+    "rating": 5,
+    
+  },
+  {
+    "id": "2",
+    "name": "Sikanderpur Parking",
+    "embedding_link": `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1753.4570047917132!2d77.09726066987768!3d28.482136196501823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d192c45998999%3A0x2ab82328dcd1dc18!2sSikanderpur%20Parking!5e0!3m2!1sen!2sin!4v1714364776683!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
+    "rating": 3.0,
+    
+  },
+  {
+    "id": "3",
+    "name": "Sikandarpur Metro Parking Area",
+    "embedding_link": `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.9265164217604!2d77.0881053060293!3d28.48175957400699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d192f0e155555%3A0x3be8e0d5ca63d5d8!2sSikandarpur%20Metro%20Parking%20Area!5e0!3m2!1sen!2sin!4v1714364807639!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
+    "rating": 4.5,
+    
+  }
+];
+
+
 
 export default function HomeScreen() {
   const { location, setLocation } = useContext(UserLocationContext);
