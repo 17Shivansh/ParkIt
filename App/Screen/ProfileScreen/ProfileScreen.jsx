@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useClerk } from '@clerk/clerk-react';
 import { useNavigation } from '@react-navigation/native';
 import { useUser } from '@clerk/clerk-expo';
+import { Link } from "react-router-dom";
 
 const ProfileScreen = () => {
   const { signOut } = useClerk();
@@ -34,7 +35,9 @@ const ProfileScreen = () => {
         <Text style={styles.userInfo}>Email: {user && user.emailAddress}</Text>
       </View>
       <TouchableOpacity onPress={navigateToNotifications}>
-        <Text style={styles.title}>Notifications</Text>
+        <Text style={styles.title}>
+        <Link to="/Notification">Notifications</Link>
+        <a href="/Notification"></a></Text>
       </TouchableOpacity>
       <Text style={styles.title}>History</Text>
       <Text style={styles.title}>Support</Text>
