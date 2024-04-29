@@ -33,8 +33,14 @@
         {
           "locationAlwaysAndWhenInUsePermission": "Allow ParkIt to use your location."
         }
+      ],
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "YOUR_APPLE_MERCHANT_ID",
+          "enableGooglePay": true
+        }
       ]
     ]
-    
   }
 }

@@ -6,6 +6,8 @@ import AppMapView from './AppMapView';
 import { UserLocationContext } from '../../Context/UserLocationContext';
 import GlobalApi from '../../Utils/GlobalApi';
 import ParkingCard from './parkingCard'; // Import the ParkingCard component
+import { createStackNavigator } from '@react-navigation/stack';
+
 
 // Corrected JSON object
 const parkingData = [
@@ -33,6 +35,7 @@ const parkingData = [
 ];
 
 export default function HomeScreen() {
+  const Stack = createStackNavigator();
   const { location, setLocation } = useContext(UserLocationContext);
   const [placeList, setPlaceList] = useState([]);
   const [parkingSpaces, setParkingSpaces] = useState([]);
@@ -81,9 +84,9 @@ export default function HomeScreen() {
       </View>
       <AppMapView />
       <View style={styles.parkingContainer}>
-        <ParkingCard parkingSpaces={parkingSpaces} />
+        
       </View>
-      <View style={styles.tabNavigation}>{/* Add your tab navigation here */}</View>
+      <View style={styles.tabNavigation}><ParkingCard parkingSpaces={parkingSpaces} /></View>
     </View>
   );
 }
