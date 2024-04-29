@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     padding: 10,
     borderRadius: 8,
-    margin: 10,
+    flex: 1, // Key change for full width
+    width: '100%', // Alternative approach (optional)
   },
   title: {
     fontSize: 18,

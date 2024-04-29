@@ -16,6 +16,9 @@ export default function AppMapView() {
     );
   }
 
+  // Log the coordinates
+  console.log('Current coordinates:', location.latitude, location.longitude);
+
   return (
     <View>
       <MapView 

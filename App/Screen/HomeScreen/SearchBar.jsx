@@ -41,7 +41,14 @@ const PlaceAutocompleteExample = () => {
     setSelectedPlace(suggestion);
     setSuggestions([]);
     setQuery(suggestion.place_name);
+    
+    // Log coordinates and name of selected place
+    if (suggestion.geometry && suggestion.geometry.coordinates) {
+      const [longitude, latitude] = suggestion.geometry.coordinates;
+      console.log('Selected place:', suggestion.place_name, 'Coordinates:', latitude, longitude);
+    }
   };
+  
 
   const renderItem = ({ item }) => (
     <TouchableOpacity style={styles.item} onPress={() => handleSelectSuggestion(item)}>
