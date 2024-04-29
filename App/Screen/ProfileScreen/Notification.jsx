@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
-import { Link } from "react-router-dom";
 
 const NotificationScreen = () => {
   const [notifications, setNotifications] = useState([
@@ -22,9 +21,7 @@ const NotificationScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.pageTitle}>
-        <Link to="/notification">Notifications</Link>
-        <a href="/notification"></a></Text>
+      <Text style={styles.pageTitle}>Notifications</Text>
       <TouchableOpacity style={styles.markAllReadButton} onPress={handleMarkAllRead}>
         <Text style={styles.markAllReadText}>Mark All Read</Text>
       </TouchableOpacity>
